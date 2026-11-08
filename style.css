@@ -1,0 +1,135 @@
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #7255db;
+    font-size: 25px;
+}
+
+p {
+    color: #555;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #7255db;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Sombra da caixa de login */
+.login-box {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito nos campos */
+input:focus {
+    outline: none;
+    border: 1px solid #7255db;
+}
+
+/* Link de recuperar senha */
+.esqueceu {
+    display: block;
+    text-align: right;
+    margin-top: 12px;
+    color: #7255db;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Efeito no botão */
+button:hover {
+    background-color: #5639bd;
+}
+
+/* Texto de cadastro */
+.cadastro {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Link de cadastro */
+.cadastro a {
+    color: #7255db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adaptacao para celulares */
+@media (max-width: 500px) {
+
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
+.senha-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.senha-container input {
+    flex: 1;
+    min-width: 0;
+}
+
+.senha-container button {
+    width: auto;
+    margin-top: 0;
+    padding: 10px;
+    background-color: transparent;
+    color: #7255db;
+    font-size: 18px;
+}
+
+.senha-container button:hover {
+    background-color: #e9e6ff;
+}
+
